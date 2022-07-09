@@ -2,6 +2,8 @@ const addNum = require('./tests/testAdd')
 const subNum = require('./tests/testSub')
 const multNum = require('./tests/testMult')
 const divNum = require('./tests/testDiv')
+const sqrtNum = require('./tests/testSqrt')
+const maxNum = require('./tests/testMax')
 
 // 
 describe('Numaric Tests', () => { 
@@ -16,5 +18,11 @@ describe('Numaric Tests', () => {
     })
     test('Division', () => {
         expect(divNum(6, 2)).toEqual(3)
+    })
+    test('Square Root', () => {
+        expect(sqrtNum(16)).toEqual(4)
+    })
+    test('Max', () => {
+        expect(maxNum(4, 2, 6)).toEqual(6)
     })
 })
