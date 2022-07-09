@@ -1,0 +1,13 @@
+const express = require('express')
+const router = express.Router()
+
+// GET for reps
+router.get('/', (req, res) => {
+    res.status(200).json({
+        message: 'GET works',
+        metadata: req.hostname,
+        method: req.method
+    })
+})
+
+module.exports = router
