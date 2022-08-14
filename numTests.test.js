@@ -6,8 +6,8 @@ const {
     sqrtNum,
     maxNum
 } = require('./tests/numTest')
+// changed const to make sense and work proper. Instead of individually calling seperate pages I consolidated the numaric tests on one page.
 
-// 
 describe('Numaric Tests', () => { 
     test('Addition', () => {
         expect(addNum(3, 3)).toEqual(6)
