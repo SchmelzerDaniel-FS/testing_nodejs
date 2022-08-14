@@ -1,9 +1,11 @@
-const addNum = require('./tests/testAdd')
-const subNum = require('./tests/testSub')
-const multNum = require('./tests/testMult')
-const divNum = require('./tests/testDiv')
-const sqrtNum = require('./tests/testSqrt')
-const maxNum = require('./tests/testMax')
+const {
+    addNum,
+    subNum,
+    multNum,
+    divNum,
+    sqrtNum,
+    maxNum
+} = require('./tests/numTest')
 
 // 
 describe('Numaric Tests', () => { 
